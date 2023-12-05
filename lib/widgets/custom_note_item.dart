@@ -18,7 +18,7 @@ class NoteItem extends StatelessWidget {
         ListTile(title:Text('Flutter Tips',style: TextStyle(color: Colors.black,fontSize: 25),),
         subtitle:Padding(
           padding: const EdgeInsets.only(top: 20,bottom: 20),
-          child: Text('Build Your Career with Tharwat Samy',style: TextStyle(color: Colors.black.withOpacity(.5),fontSize: 18),),
+          child: Text('Build Your Career with Tharwat Samy',style: TextStyle(color: Colors.black.withOpacity(.5),fontSize: 16),),
         ),
         trailing: IconButton(onPressed: (){}, icon:const Icon(FontAwesomeIcons.trash,color: Colors.black,size: 24,),),),
 
