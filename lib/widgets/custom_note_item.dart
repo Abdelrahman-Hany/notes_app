@@ -19,11 +19,11 @@ class NoteItem extends StatelessWidget {
             const EdgeInsets.only(top: 24, bottom: 24, right: 16, left: 16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: Color(0xffFFCC80),
+          color:const Color(0xffFFCC80),
         ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
           ListTile(
-            title: Text(
+            title:const Text(
               'Flutter Tips',
               style: TextStyle(color: Colors.black, fontSize: 25),
             ),
