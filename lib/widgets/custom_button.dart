@@ -14,7 +14,7 @@ class CustomButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
 
       ),
-      child: Center(
+      child:const Center(
         child: Text('Add',style: TextStyle(color: Colors.black,
         fontSize: 20,
         ),
