@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'package:note_app/constants.dart';
 import 'package:note_app/views/notes_view.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox(kNotesBox);
   runApp(const NotesApp());
 }
 
-  class NotesApp extends StatelessWidget {
+class NotesApp extends StatelessWidget {
   const NotesApp({super.key});
 
   @override
@@ -16,7 +20,7 @@ void main() {
         brightness: Brightness.dark,
         fontFamily: 'Poppins',
       ),
-      home:const NotesView(),
+      home: const NotesView(),
     );
   }
 }
