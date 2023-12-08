@@ -1,5 +1,13 @@
-import 'package:flutter/material.dart';
+abstract class AddNoteState {}
 
-abstract class NotesState {}
+class AddNoteInitial extends AddNoteState {}
 
-class NotesInitial extends NotesState {}
+class AddNoteLoading extends AddNoteState {}
+
+class AddNoteSuccess extends AddNoteState {}
+
+class AddNoteFailure extends AddNoteState {
+  final String errorMessage;
+
+  AddNoteFailure({required this.errorMessage});
+}
