@@ -4,8 +4,6 @@ import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:note_app/add_note_cubit/add_note_cubit.dart';
 import 'package:note_app/add_note_cubit/add_note_state.dart';
 import 'package:note_app/widgets/add_note_form.dart';
-import 'package:note_app/widgets/custom_button.dart';
-import 'package:note_app/widgets/custom_text_field.dart';
 
 class AddNoteBottomSheet extends StatefulWidget {
   const AddNoteBottomSheet({super.key});
@@ -28,7 +26,7 @@ class _AddNoteBottomSheetState extends State<AddNoteBottomSheet> {
               isLoading = true;
             }
             if (state is AddNoteFailure) {
-              print('faled ${state.errorMessage}');
+            print('faled ${state.errorMessage}');
             }
             if (state is AddNoteSuccess) {
               Navigator.pop(context);
