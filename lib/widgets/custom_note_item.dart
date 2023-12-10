@@ -4,26 +4,29 @@ import 'package:note_app/views/edit_note_view.dart';
 
 class NoteItem extends StatelessWidget {
   const NoteItem({super.key});
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context){
-        return const EditNoteView();
-        },
-        ),);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return const EditNoteView();
+            },
+          ),
+        );
       },
       child: Container(
         padding:
             const EdgeInsets.only(top: 24, bottom: 24, right: 16, left: 16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color:const Color(0xffFFCC80),
+          color: const Color(0xffFFCC80),
         ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
           ListTile(
-            title:const Text(
+            title: const Text(
               'Flutter Tips',
               style: TextStyle(color: Colors.black, fontSize: 25),
             ),
