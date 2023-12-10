@@ -8,9 +8,11 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+            isScrollControlled: true,//it make the bottom sheet to scroll to upove when kybord appeared 
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
