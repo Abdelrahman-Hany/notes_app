@@ -11,7 +11,7 @@ void main() async {
   await Hive.initFlutter();
     Hive.registerAdapter(
     NoteModelAdapter()); //this tills hive that it takes note model so we can use the model we create with hive
-  await Hive.openBox(kNotesBox);
+  await Hive.openBox<NoteModel>(kNotesBox);
 
   runApp(const NotesApp());
 }
