@@ -6,7 +6,6 @@ import 'package:note_app/cubits/notes_cubit/notes_cubit.dart';
 import 'package:note_app/models/note_model.dart';
 import 'package:note_app/simple_bloc_observer.dart';
 import 'package:note_app/views/notes_view.dart';
-import 'package:note_app/widgets/add_note_form.dart';
 
 void main() async {
   Bloc.observer = SimpleBlocObserver();
